@@ -100,6 +100,7 @@ depend krta hia jis mein store hona hai
 
 // LINEAR SEARCH
 
+/*
 int main()
 {
     int matrix [4][3] = {
@@ -135,6 +136,74 @@ int main()
 
     if (indexrow == -1 && indexcol == -1) {
         cout <<"Target not found" ;
+    }
+
+return 0 ;
+}
+
+*/
+
+// SUM OF ARRAY
+
+/*
+int main()
+{
+    int matrix [3][3] = {
+                         {1,2,3},
+                         {4,5,6},
+                         {7,8,9}, 
+                                    } ;
+
+    int row = 3;
+    int col = 3 ;
+    int maxRow = 0 ; 
+    for (int i=0; i<row; i++) {
+           int sumrow1 = 0 ;
+        
+        for (int j=0 ; j<col; j++) {
+
+            sumrow1 += matrix[i][j];
+
+        }
+    cout <<"The sum of row " << i<< " is:" << sumrow1 << endl;
+    
+    
+    if (sumrow1 >maxRow ) {
+
+        maxRow = sumrow1 ;
+    }
+}
+    cout <<"The maximum sum is: " << maxRow << endl ;
+return 0 ;
+}
+
+*/
+
+// SUM OF TWO ARRAYS
+
+int main()
+{
+    int array1[2][2] = {{1,2},{3,4}} ;
+    int array2[2][2] = {{5,6},{7,8}} ;
+
+    int sumOfArray =0 ;
+
+    for (int i=0; i<2; i++) {
+        for (int j=0; j<2; j++) {
+
+            cout << array1[i][j] <<" " ;
+
+        }
+
+        for (int i=0; i<2; i++) {
+            for (int j=0; j<2; j++) {
+                cout <<array2[i][j] << " " ;
+            }
+
+            cout <<endl;
+        }
+
+        cout <<endl;
     }
 
 return 0 ;
